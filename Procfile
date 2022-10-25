@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run app.py
+web: gunicorn --bind 0.0.0.0:$PORT flaskapp:app
